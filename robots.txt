@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://roberningromfme.github.io/zh-portal-aiyouxi-com-cn/sitemap.xml

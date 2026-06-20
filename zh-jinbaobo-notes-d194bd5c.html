@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金宝博 · 信息索引与产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+            background-color: #f5f7fa;
+            color: #1e2a3a;
+            line-height: 1.7;
+        }
+
+        /* 深色头图 */
+        .hero {
+            background: linear-gradient(165deg, #0b1a2c 0%, #1a2f44 80%, #243b50 100%);
+            color: #eef2f6;
+            padding: 4rem 1.5rem 3.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #7aa5d9, transparent);
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            opacity: 0.75;
+            max-width: 640px;
+            margin: 0 auto 1.5rem;
+            font-weight: 300;
+        }
+
+        .hero .tagline {
+            display: inline-block;
+            background: rgba(122, 165, 217, 0.18);
+            padding: 0.35rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            color: #b8d0e8;
+            border: 1px solid rgba(122, 165, 217, 0.25);
+        }
+
+        /* 浅色正文区 */
+        .container {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 2.2rem 1.5rem 3.5rem;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #0b1a2c;
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.35rem;
+            border-bottom: 2px solid #dce3ec;
+        }
+
+        .section {
+            margin-bottom: 2.8rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin: 1.2rem 0 0.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.2rem 1.4rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            border: 1px solid #e9edf2;
+            transition: box-shadow 0.15s;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0f2a41;
+            margin-bottom: 0.3rem;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #3d4d5e;
+        }
+
+        /* 强调色链接 */
+        a {
+            color: #1a6bb0;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        a:hover {
+            color: #0c4a82;
+            border-bottom-color: #1a6bb0;
+        }
+
+        .inline-link {
+            font-weight: 500;
+        }
+
+        .tip-block {
+            background: #eaf1fa;
+            border-left: 4px solid #1a6bb0;
+            padding: 1rem 1.4rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            color: #0b1a2c;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item p {
+            margin-left: 0.2rem;
+            color: #2f4052;
+            font-size: 0.95rem;
+        }
+
+        .footer-note {
+            text-align: center;
+            border-top: 1px solid #d8dfe8;
+            padding-top: 1.8rem;
+            margin-top: 1.5rem;
+            font-size: 0.82rem;
+            color: #5f6f80;
+        }
+
+        /* 响应式 */
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero { padding: 3rem 1rem 2.5rem; }
+            .card-grid { grid-template-columns: 1fr; }
+            .container { padding: 1.5rem 1rem 2.5rem; }
+            .section-title { font-size: 1.15rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 深色头图 -->
+    <header class="hero">
+        <h1>金宝博 · 产品说明</h1>
+        <p class="sub">一份围绕信息整理与使用索引的简洁参考，帮助用户快速了解平台结构、核心特点与适用场景。</p>
+        <span class="tagline">资料整理 · 客观索引</span>
+    </header>
+
+    <!-- 正文区 -->
+    <main class="container">
+
+        <!-- 摘要 -->
+        <section class="section">
+            <h2 class="section-title">摘要</h2>
+            <p>本页面向对 <a href="https://zh-jinbaobo.com" class="inline-link">金宝博</a> 感兴趣的使用者，提供经过整理的产品信息框架，内容涵盖主要功能模块、界面设计风格、可用性提示以及常见疑问。所有描述均基于公开可查的资料与常规使用体验，不包含未经核实的承诺或主观评价。</p>
+            <p>如果你希望直接浏览平台本身，可以在此处打开 <a href="https://zh-jinbaobo.com">金宝博</a>。以下内容作为辅助参考，帮助你更快熟悉整体轮廓。</p>
+        </section>
+
+        <!-- 亮点（卡片式） -->
+        <section class="section">
+            <h2 class="section-title">主要亮点</h2>
+            <p style="margin-bottom: 0.4rem; color: #3d4d5e;">根据用户反馈与功能观察，以下特性较为突出：</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>导航结构清晰</h3>
+                    <p>模块分区明确，常用功能入口可在两到三次点击内到达，降低初次使用时的认知负担。</p>
+                </div>
+                <div class="card">
+                    <h3>信息密度适中</h3>
+                    <p>页面布局在紧凑与留白之间取得平衡，重要数据项以卡片或列表形式呈现，便于快速浏览。</p>
+                </div>
+                <div class="card">
+                    <h3>响应式适配</h3>
+                    <p>无论使用桌面端、平板还是手机，核心界面均能自动调整尺寸与排列，保持基本操作连贯。</p>
+                </div>
+                <div class="card">
+                    <h3>搜索与筛选</h3>
+                    <p>内置筛选器和关键词搜索功能，支持按分类、时间等维度缩小范围，提升信息定位效率。</p>
+                </div>
+            </div>
+            <p style="margin-top: 0.8rem; font-size: 0.9rem; color: #5a6b7c;">以上亮点基于常规使用场景整理，实际体验可能因个人网络、设备及版本更新有所差异。</p>
+        </section>
+
+        <!-- 使用建议 -->
+        <section class="section">
+            <h2 class="section-title">使用建议</h2>
+            <p>为了让信息检索和浏览更有效率，以下几条做法可供参考：</p>
+            <ul style="margin: 0.6rem 0 0.6rem 1.8rem; color: #2f4052;">
+                <li>初次访问时，建议先浏览首页的主要分类标签，建立对内容分布的整体印象。</li>
+                <li>利用页面顶部的搜索栏输入关键词（例如“规则”、“帮助”），可快速定位相关说明。</li>
+                <li>如果对某个功能区不熟悉，可以留意页面角落的?图标或“提示”按钮，通常附有简要解释。</li>
+                <li>定期关注公告区域，平台可能会调整界面或补充新模块，公告能帮助你及时了解变化。</li>
+            </ul>
+            <div class="tip-block">
+                💡 提示：如果你正在寻找特定资料，可以尝试先使用站内搜索，再结合分类浏览。多数情况下，这两种方式能覆盖大部分需求。
+            </div>
+        </section>
+
+        <!-- 场景说明 -->
+        <section class="section">
+            <h2 class="section-title">适用场景简述</h2>
+            <p><a href="https://zh-jinbaobo.com" class="inline-link">金宝博</a> 所提供的功能布局，适合以下常见使用情境：</p>
+            <div style="margin-top: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                <span style="background: #e9edf2; padding: 0.3rem 1rem; border-radius: 40px; font-size: 0.85rem;">日常信息查阅</span>
+                <span style="background: #e9edf2; padding: 0.3rem 1rem; border-radius: 40px; font-size: 0.85rem;">快速数据对比</span>
+                <span style="background: #e9edf2; padding: 0.3rem 1rem; border-radius: 40px; font-size: 0.85rem;">内容归档整理</span>
+                <span style="background: #e9edf2; padding: 0.3rem 1rem; border-radius: 40px; font-size: 0.85rem;">多端协同浏览</span>
+                <span style="background: #e9edf2; padding: 0.3rem 1rem; border-radius: 40px; font-size: 0.85rem;">功能探索学习</span>
+            </div>
+            <p style="margin-top: 1rem;">无论你是首次接触还是已有一定使用经验，都可以根据自身需求灵活选取功能模块。平台未设置强制引导流程，用户可以按自己的节奏逐步熟悉。</p>
+        </section>
+
+        <!-- FAQ摘要 -->
+        <section class="section">
+            <h2 class="section-title">常见问题摘要</h2>
+            <div class="faq-item">
+                <strong>Q：是否需要注册才能浏览大部分内容？</strong>
+                <p>部分公开信息无需登录即可查看，但涉及个人偏好设置或详细数据面板时，通常需要拥有账号。具体范围以实际页面提示为准。</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q：在移动设备上使用会有限制吗？</strong>
+                <p>移动端浏览器访问时界面会自动适配，主要交互功能均可使用。个别复杂筛选组件在窄屏下可能会折叠，展开后不影响操作。</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q：如何获取最新的功能变更信息？</strong>
+                <p>建议留意站内公告区域或帮助中心。部分更新也会在首页焦点图或通知栏展示，你可以定期关注。</p>
+            </div>
+            <p style="margin-top: 0.8rem; font-size: 0.9rem;">更多针对性问题，可直接在 <a href="https://zh-jinbaobo.com">金宝博</a> 内搜索“帮助”或联系客服渠道获取解答。</p>
+        </section>
+
+        <!-- 可信但克制的访问说明 -->
+        <section class="section" style="margin-bottom: 1.2rem;">
+            <h2 class="section-title">关于访问的几点说明</h2>
+            <p>本页面仅作为信息索引，旨在为用户提供一份结构化的产品介绍。所有描述均来自公开资料与常规使用整理，不构成对任何功能的绝对保证。</p>
+            <p>访问 <a href="https://zh-jinbaobo.com">金宝博</a> 时，请确保你处于稳定的网络环境，并使用最新版本的现代浏览器（如 Chrome、Edge、Safari 或 Firefox）以获得最佳显示效果。平台本身不要求安装额外插件，但部分高级功能可能需要开启 JavaScript。</p>
+            <p style="margin-top: 0.5rem;">如果在使用过程中遇到页面异常，建议先检查网络连接或清除浏览器缓存。仍无法解决时，可参考站内的帮助文档或联系官方支持。请勿轻信非官方渠道发布的所谓“快捷方式”、“破解版”或“内部链接”，谨防信息泄露。</p>
+        </section>
+
+        <!-- 底部 -->
+        <div class="footer-note">
+            <p>本页为独立整理的产品说明页，仅供信息参考，不涉及任何诱导或承诺。<br>具体功能与界面以 <a href="https://zh-jinbaobo.com">金宝博</a> 实际版本为准。</p>
+            <p style="margin-top: 0.5rem; color: #7d8b9c;">— 资料整理版 · 持续迭代 —</p>
+        </div>
+
+    </main>
+
+</body>
+</html>
